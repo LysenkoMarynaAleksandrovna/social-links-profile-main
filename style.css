@@ -23,13 +23,16 @@ body {
 
 main {
     background-color: var(--Grey-800);
-    justify-content: center;
-    width: 27%;
     color: var(--White);
-    display: grid;
     margin: 11rem auto;
     text-align: center;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
 }
 
 img {
@@ -65,9 +68,40 @@ li {
     background-color: var(--Grey-700);
     padding: 0.85rem 5.95rem;
     margin-bottom: 1.05rem;
+    margin-inline: 2.5rem;
     border-radius: 10px;
 }
 
 li:last-child {
     margin-bottom: 2.6rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 7rem auto;
+    }
+
+    img {
+        margin: 1.7rem auto 1.8rem auto;
+    }
+
+    h2 {
+        margin-bottom: 1.7rem;
+    }
+
+    li {
+        padding: 0.88rem 5.15rem;
+        margin-bottom: 1rem;
+        margin-inline: 1.5rem;
+    }
+
+    li:last-child {
+        margin-bottom: 1.6rem;
+    }
 }
