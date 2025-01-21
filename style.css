@@ -80,6 +80,7 @@ body {
     color: var(--Grey-900);
     background-color: var(--Green);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 footer {
