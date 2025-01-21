@@ -79,6 +79,7 @@ body {
 .user-profile__social-links li:hover {
     background-color: var(--Green);
     transition: 0.3s;
+    color: var(--Grey-900);
 }
 
 footer {
