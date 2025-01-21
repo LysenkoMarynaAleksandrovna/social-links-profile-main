@@ -21,7 +21,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-main {
+.user-profile {
     background-color: var(--Grey-800);
     color: var(--White);
     margin: 11rem auto;
@@ -35,35 +35,35 @@ main {
     width: max-content;
 }
 
-img {
+.user-profile__avatar {
     margin: 2.3rem auto 1.8rem auto;
     height: 88px;
     width: 88px;
     border-radius: 50%;
 }
 
-h1 {
+.user-profile__name {
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: .55rem;
 }
 
-h2 {
+.user-profile__location {
     color: var(--Green);
     font-size: 0.88rem;
     font-weight: 600;
     margin-bottom: 1.8rem;
 }
 
-p {
+.user-profile__info {
     margin-bottom: 1.6rem;
 }
 
-ol {
+.user-profile__social-links {
     list-style: none;
 }
 
-li {
+.user-profile__social-links li {
     font-weight: 700;
     background-color: var(--Grey-700);
     padding: 0.85rem 5.95rem;
@@ -72,8 +72,13 @@ li {
     border-radius: 10px;
 }
 
-li:last-child {
+.user-profile__social-links li:last-child {
     margin-bottom: 2.6rem;
+}
+
+.user-profile__social-links li:hover {
+    background-color: var(--Green);
+    transition: 0.3s;
 }
 
 footer {
@@ -83,25 +88,25 @@ footer {
 }
 
 @media (max-width: 700px) {
-    main {
+    .user-profile {
         margin: 7rem auto;
     }
 
-    img {
+    .user-profile__avatar {
         margin: 1.7rem auto 1.8rem auto;
     }
 
-    h2 {
-        margin-bottom: 1.7rem;
+    .user-profile__name {
+        margin-bottom: 0.5rem;
     }
 
-    li {
+    .user-profile__social-links li {
         padding: 0.88rem 5.15rem;
         margin-bottom: 1rem;
         margin-inline: 1.5rem;
     }
 
-    li:last-child {
+    .user-profile__social-links li:last-child {
         margin-bottom: 1.6rem;
     }
 }
